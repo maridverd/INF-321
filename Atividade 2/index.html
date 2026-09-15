@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gatinhos Fofos à Venda</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <header>
+            <h1>Gatinhos Fofos à Venda</h1>
+        </header>
+
+        <main> 
+            <p>Nós temos os gatinhos mais fofos à venda. Temos de todo tamanho, cor e pelagem! Vem garantir seu gatinho fofo hoje.</p>
+            <img src="https://t4.ftcdn.net/jpg/05/35/47/87/360_F_535478769_uNozyL8JY2IIPV6TQiCJec6KtwY2e3WG.jpg" alt="Cinco gatos filhotes de cores diferentes em uma cesta."> 
+            <section> 
+                <h2>Gatinhos disponíveis</h2>
+                <table>
+                    <tr>
+                        <td class="card">
+                            <img src="https://www.lovemeow.com/media-library/orange-tabby-kitten.jpg?id=29380621&width=800&quality=85"
+                                alt="Gato filhote de pelagem laranja sentado e olhando para a camera."
+                                width="200">
+                            <p>Gato Laranja</p>
+                            <p>R$ 1,00</p>
+                            <a href="/gato-laranja">Ver detalhes</a>
+                        </td>
+
+                        <td class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSf7B24V7YregZgkyiUalJI35b5Ov-wonr5TtQXrGTmyRjfLgZjTDYg9M&s=10"
+                                alt="Gato filhote de pelagem preta sentado e olhando para a camera."
+                                width="200">
+                            <p>Gato Preto</p>
+                            <p>R$ 1,00</p>
+                            <a href="/gato-preto">Ver detalhes</a>
+                        </td>
+
+                        <td class="card">
+                            <img src="https://wpets.com.br/wp-content/uploads/2020/04/236002025368770.jpg"
+                                alt="Gato filhote sem pelo sentado e olhando para a camera."
+                                width="200">
+                            <p>Gato Nu</p>
+                            <p>R$ 1,00</p>
+                            <a href="/gato-nu">Ver detalhes</a>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section> 
+                <h2>Cadastrar novo gatinho</h2>
+                <form method="post" action="/gatinhos">
+                    <label>Imagem</label>
+                    <input type="file" name="imagem" accept="image/">
+                    <label>Nome</label>
+                    <input type="text" name="nome">
+                    <label>Preço</label>
+                    <input type="number" name="preco">
+                    <button type="submit">Cadastrar novo gatinho</button>
+                </form>
+            </section>
+        </main>
+        <footer> 
+            <p>Loja da Marianna Drago Verduin</p>
+        </footer>     
+    </body>
+</html>
