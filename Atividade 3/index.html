@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gatinhos Fofos à Venda</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <header>
+            <h1>Gatinhos Fofos à Venda</h1>
+        </header>
+
+        <main> 
+            <p>Nós temos os gatinhos mais fofos à venda. Temos de todo tamanho, cor e pelagem! Vem garantir seu gatinho fofo hoje.</p>
+            
+            <div class="busca-container">
+                <input type="text" id="input-busca" placeholder="Digite um gatinho...">
+                <button id="btn-buscar">Buscar</button>
+            </div>
+
+            <div id="mensagem-sucesso" class="mensagem-sucesso escondido">
+                Gatinho adicionado ao carrinho!
+            </div>
+
+            <img src="https://t4.ftcdn.net/jpg/05/35/47/87/360_F_535478769_uNozyL8JY2IIPV6TQiCJec6KtwY2e3WG.jpg" alt="Cinco gatos filhotes de cores diferentes em uma cesta."> 
+            <section> 
+                <h2>Gatinhos disponíveis</h2>
+                <table id="lista-produtos">
+                    <tr>
+                        <td class="card">
+                            <img src="https://www.lovemeow.com/media-library/orange-tabby-kitten.jpg?id=29380621&width=800&quality=85"
+                                alt="Gato filhote de pelagem laranja sentado e olhando para a camera."
+                                width="200">
+                            <p class="nome-produto">Gato Laranja</p>
+                            <p>R$ 1,00</p>
+                            <a href="/gato-laranja">Ver detalhes</a>
+                            <button class="btn-comprar">Comprar</button>
+                        </td>
+
+                        <td class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSf7B24V7YregZgkyiUalJI35b5Ov-wonr5TtQXrGTmyRjfLgZjTDYg9M&s=10"
+                                alt="Gato filhote de pelagem preta sentado e olhando para a camera."
+                                width="200">
+                            <p class="nome-produto">Gato Preto</p>
+                            <p>R$ 1,00</p>
+                            <a href="/gato-preto">Ver detalhes</a>
+                            <button class="btn-comprar">Comprar</button>
+                        </td>
+
+                        <td class="card">
+                            <img src="https://wpets.com.br/wp-content/uploads/2020/04/236002025368770.jpg"
+                                alt="Gato filhote sem pelo sentado e olhando para a camera."
+                                width="200">
+                            <p class="nome-produto">Gato Nu</p>
+                            <p>R$ 1,00</p>
+                            <a href="/gato-nu">Ver detalhes</a>
+                            <button class="btn-comprar">Comprar</button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section> 
+                <h2>Fale Conosco</h2>
+                <form id="form-contato">
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    <span class="erro-msg escondido" id="erro-nome">Este campo é obrigatório.</span>
+
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                    <span class="erro-msg escondido" id="erro-email">Este campo é obrigatório.</span>
+
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+                    <span class="erro-msg escondido" id="erro-mensagem">Este campo é obrigatório.</span>
+
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </section>
+
+            <section> 
+                <h2>Cadastrar novo gatinho</h2>
+                <form method="post" action="/gatinhos">
+                    <label>Imagem</label>
+                    <input type="file" name="imagem" accept="image/">
+                    <label>Nome</label>
+                    <input type="text" name="nome">
+                    <label>Preço</label>
+                    <input type="number" name="preco">
+                    <button type="submit">Cadastrar novo gatinho</button>
+                </form>
+            </section>
+        </main>
+        <script src="script.js"></script>
+        <footer> 
+            <p>Loja da Marianna Drago Verduin</p>
+        </footer>     
+    </body>
+</html>
